@@ -1,5 +1,6 @@
 .section {
     background: linear-gradient(180deg, #3E3E3E 0%, #070707 100%);
+    padding-bottom: 150px;
 }
 
 .about {
@@ -11,6 +12,13 @@
     margin-bottom: 48px;
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
 .movie-cards-wrapper {
     display: flex;
     gap: 58px;
@@ -20,6 +28,13 @@
 .card-movie {
     width: 294px;
     height: calc(361px + 141px);
+}
+
+.card-avatar {
+    img {
+        width: 300px;
+        height: 450px;
+    }
 }
 
 .card-desc {
@@ -94,149 +109,5 @@
         font-style: normal;
         font-weight: 400;
         color: #FFF;
-    }
-}
-
-// <- ================================ Modal =================================== ->
-
-.modal {
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0, 0.7);
-}
-
-.modal-inner {
-    position: absolute;
-    width: 850px;
-    height: 450px;
-    background-color: #fff;
-    border-radius: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    cursor: pointer;
-}
-
-.modal-content-wrap {
-    display: flex;
-    gap: 50px;
-}
-
-// <- ========================================== Modal Movie Avatar ========================= ->
-
-.modal-movie-avatar {
-    width: 294px;
-    height: 361px;
-
-    .modal-movie-avatar-img {
-        border-radius: 10px;
-    }
-}
-
-// <- ========================================== Modal Movie Name ========================= ->
-
-.modal-movie-name {
-    .modal-movie-name-h3 {
-        font-size: 23px;
-        color: dodgerblue;
-        margin-bottom: 50px;
-    }
-}
-
-// <- ========================================== Modal Movie Left discreption ========================= ->
-
-.modal-movie-disc-wrapper {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    gap: 15%;
-
-    .modal-movie-year-p {
-        color: dodgerblue;
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 12px;
-    }
-
-    .modal-movie-country-p {
-        color: dodgerblue;
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 12px;
-    }
-
-    .modal-movie-genre-p {
-        color: dodgerblue;
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 12px;
-    }
-
-    .modal-movie-qualty-p {
-        color: dodgerblue;
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 12px;
-    }
-
-    .modal-movie-time-p {
-        color: dodgerblue;
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 12px;
-    }
-
-    span {
-        color: #000;
-    }
-}
-
-// <- ========================================== Modal Movie right discreption ========================= ->
-
-.modal-movie-disc-api {
-    display: flex;
-    flex-direction: column;
-
-    .modal-movie-api-year {
-        margin-bottom: 15px;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .modal-movie-api-country {
-        margin-bottom: 15px;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .modal-movie-api-genre {
-        margin-bottom: 15px;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .modal-movie-api-qualty {
-        margin-bottom: 15px;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .modal-movie-api-time {
-        margin-bottom: 15px;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .modal-movie-api-lang {
-        margin-bottom: 15px;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
     }
 }
